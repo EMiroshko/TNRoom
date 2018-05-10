@@ -9,8 +9,8 @@ webpackJsonp([0],[
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(7);
-__webpack_require__(10);
-module.exports = __webpack_require__(11);
+__webpack_require__(12);
+module.exports = __webpack_require__(13);
 
 
 /***/ }),
@@ -19,11 +19,15 @@ module.exports = __webpack_require__(11);
 
 const Header = __webpack_require__(8);
 const Slick = __webpack_require__(9);
+const Scroll = __webpack_require__(10);
+const Carousel = __webpack_require__(11);
 
 class App {
     init() {
         this.headerModule = new Header().init();
         this.slickModule = new Slick().init();
+        this.scrollModule = new Scroll().init();
+        this.carouselModule = new Carousel().init();
     }
 }
 
@@ -120,12 +124,90 @@ module.exports = Slick;
 
 /***/ }),
 /* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {class Scroll {
+    constructor(optionsReceived) {
+        this.options = Object.assign({}, optionsReceived);
+        this.cache = {};
+    }
+    init() {
+        this.initializeCache();
+        this.initializeEvents();
+        return this;
+    }
+    initializeCache() {
+        this.cache.document = $(document);
+        this.cache.body = $('body');
+        this.cache.header = $('.thnr__header');
+        this.cache.page = $('.thnr__page');      
+    }
+    initializeEvents() {
+        this.cache.header.on('click', () => {
+            this.slowScroll();
+        })
+            
+    }    
+
+    slowScroll() {
+        $(this.cache.document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+        
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+        });
+    }
+
+}
+
+module.exports = Scroll;
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {class Carousel {
+    constructor(optionsReceived) {
+        this.options = Object.assign({}, optionsReceived);
+        this.cache = {};
+    }
+    init() {
+        this.initializeCache();
+        this.initializeEvents();
+        return this;
+    }
+    initializeCache() {
+        this.cache.document = $(document);
+        this.cache.body = $('body');
+        this.cache.photoItem = $('.thnr__about__item');
+        this.cache.textItem = $('.thnr__about__description');
+    }
+    initializeEvents() {
+        this.cache.photoItem.on('click', (e) => {
+            this.showMe(e);
+        });
+    }
+
+    showMe(e) {
+        this.cache.photoItem.removeClass('active');
+        $(e.target).closest('.thnr__about__item').addClass('active');
+    }
+}
+
+module.exports = Carousel;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 12 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 11 */
+/* 13 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
