@@ -417,7 +417,7 @@ a {
 
 @media (max-width: 480px) {
   .thnr__gallery-page {
-    padding: 10% 5px;
+    padding: 15% 5px;
     position: relative; }
     .thnr__gallery-page .slick-arrow.slick-prev, .thnr__gallery-page .slick-arrow.slick-next {
       display: none !important; }
@@ -624,8 +624,10 @@ a {
     width: calc(100% / 2); } }
 
 @media (max-width: 600px) {
-  .thnr__page.thnr__about .thnr__about__item {
-    width: 100%; } }
+  .thnr__page.thnr__about {
+    padding: 15% 5px 50px; }
+    .thnr__page.thnr__about .thnr__about__item {
+      width: 100%; } }
 
 @media (max-width: 1200px) {
   .thnr__main-nav {
@@ -716,6 +718,8 @@ a {
     background-position: 55% 50%; } }
 
 @media (max-device-width: 768px) and (orientation: portrait) {
+  .thnr__page {
+    max-height: 2000px; }
   .thnr__main-photo {
     background-size: 200%;
     max-width: 175%; } }
