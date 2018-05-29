@@ -1,17 +1,16 @@
 #thnr__map {
     width: 70%;
-    height: 88%;
+    height: 60%;
     float: right;
 
 }
 
 .thnr {
     &__contact-us {
-        padding: 11% 1% 1% 1%;
+        padding: 80px 1% 1% 1%;
         &__container {  
             float: left;  
             width: 30%;
-            height: 88%;
             text-align: left;
             line-height: 1.5;
         } 
@@ -30,8 +29,18 @@
             vertical-align: top;
         }
     }
+
+    &__title {
+        text-align: center;
+        display: block;
+        width: 300px;
+    }
     &__container-small {
-        clear: right;
+        &__social {
+            &-mob {
+                display: none;
+            }
+        }
     }
    
 }
