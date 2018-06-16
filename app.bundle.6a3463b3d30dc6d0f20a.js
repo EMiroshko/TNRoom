@@ -107,7 +107,7 @@ class Slick {
             asNavFor: this.cache.slickNav
         });
         this.cache.slickNav.slick({
-            slidesToShow: 5,
+            slidesToShow: 7,
             slidesToScroll: 3,
             autoplay: true,
             asNavFor: this.cache.slickItem,
