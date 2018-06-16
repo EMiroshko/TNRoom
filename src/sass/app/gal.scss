@@ -6,6 +6,18 @@
     width: 100%;
     min-height: auto;
     position: relative;
+    .slick-gal-wrap {
+      .slick-arrow {
+        &.slick-prev {
+          left: 5%;
+          z-index: 100;
+        }
+        &.slick-next {
+          right: 5%;
+          z-index: 100;
+        }
+      }
+    }
   }
   &__gal-item {
     display: inline-block;
@@ -18,7 +30,7 @@
   &__slick-for {
     height: 10%;
     margin: 30px auto;
-    width: 50%;
+    width: 65%;
     background-color: black;
     text-align: center;
     .thnr__gal-item {
@@ -31,6 +43,7 @@
         border-radius: 6px;
       }
     }
+
     .slick-arrow {
       border: 10px solid transparent;
       &.slick-prev {
@@ -109,6 +122,7 @@
       height: 100%;
       top: 0;
       border-radius: 8px;
+      max-width: 425px;
     }
   }
 }

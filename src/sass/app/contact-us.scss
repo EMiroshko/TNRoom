@@ -1,8 +1,29 @@
-#thnr__map {
+.thnr__map-wrap {
     width: 70%;
     height: 60%;
     float: right;
-
+    position: relative;
+    .thnr__map-back,
+    #thnr__map{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .thnr__map-back {
+        background-color: rgba(255, 255, 255, .7);
+        span {
+            position: absolute;
+            right: 10px;
+            left: 10px;
+            margin: 0 auto;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: #333;
+        }
+    }
 }
 
 .thnr {
@@ -33,7 +54,7 @@
     &__title {
         text-align: center;
         display: block;
-        width: 300px;
+        width: 95%;
     }
     &__container-small {
         &__social {

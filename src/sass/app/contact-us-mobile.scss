@@ -1,5 +1,5 @@
 @media (max-width: 990px) {
-    #thnr__map {
+    .thnr__map-wrap {
         width: 60%;
         height: 60%;
     }
@@ -14,7 +14,6 @@
                 float: left;
             }
             &__title {
-                width: 260px;
                 font-size: 30px;
                 margin: 0 auto 20px;
                 float: none;
@@ -42,7 +41,7 @@
     }
     
     @media (max-width: 768px) {
-        #thnr__map {
+        .thnr__map-wrap {
             width: 54%;
             height: 65%;
             float: right;
@@ -100,7 +99,7 @@
     }
     
     @media (max-width: 600px) {
-        #thnr__map {
+        .thnr__map-wrap {
             width: 95%;
             height: 40%;
             float: none;
@@ -109,6 +108,7 @@
             &__contact-us {
                 &__container {
                     width: 100%;
+                    float: none;
                 }
                 &__title {
                     font-size: 28px;
@@ -195,7 +195,7 @@
 
             }
         }
-        #thnr__map {
+        .thnr__map-wrap {
             width: 100%;
             height: 60%;
             margin-top: 10px;
