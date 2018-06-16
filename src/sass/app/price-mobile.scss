@@ -1,0 +1,48 @@
+
+
+@media (max-width: 767px) {
+  .thnr__pricelist {
+    padding: 60px 10px;
+  }
+  .thnr {
+    &__price-wrap {
+      width: 100%;
+      margin: 0 auto;
+      ul {
+        li {
+          font-size: 14px;
+          span:last-child {
+            width: 17%;
+          }
+        }
+      }
+    }
+    &__price-title {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .thnr {
+    &__pricelist-wrap {
+      width: 100%;
+    }
+    &__price-wrap {
+      padding: 0;
+      ul {
+        li {
+          span {
+            width: 60%;
+            span {
+              width: 100%;
+            }
+          }
+          span:last-child {
+            width: 90px
+          }
+        }
+      }
+    }
+  }
+}

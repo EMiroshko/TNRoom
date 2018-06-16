@@ -113,9 +113,13 @@
 @media (max-width: 600px) {
     .thnr__page {
         &.thnr__about {
-            padding: 15% 5px 50px;
+            padding: 60px 5px;
             .thnr__about__item {
                 width: 100%;
+                margin-bottom: 15px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
             }
         }
     }

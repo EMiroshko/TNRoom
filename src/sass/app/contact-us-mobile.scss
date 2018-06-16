@@ -5,6 +5,12 @@
     }
     
     .thnr {
+        &__title {
+            font-size: 30px;
+            margin: 0 auto 20px;
+            float: none;
+            display: block;
+        }
         &__contact-us {
             padding: 70px 1% 1% 2%;
             &__container {
@@ -12,12 +18,6 @@
                 font-size: 15px;
                 line-height: 1.7;
                 float: left;
-            }
-            &__title {
-                font-size: 30px;
-                margin: 0 auto 20px;
-                float: none;
-                display: block;
             }
         }
         &__container-small__phones,
@@ -48,16 +48,16 @@
         }
     
         .thnr {
+            &__title {
+                margin: 0 auto 20px;
+                font-size: 28px;
+            }
         &__contact-us {
             padding: 60px 1% 1% 4%;
             &__container {
                 width: 40%;
                 font-size: inherit;
                 float: left;
-            }
-            &__title {
-                margin: 0 auto 20px;
-                font-size: 28px;
             }
             &__content {
                 font-size: 14px;
@@ -105,13 +105,13 @@
             float: none;
         }
         .thnr {
+            &__title {
+                font-size: 28px;
+            }
             &__contact-us {
                 &__container {
                     width: 100%;
                     float: none;
-                }
-                &__title {
-                    font-size: 28px;
                 }
                 &__content {
                     display: inline-block;

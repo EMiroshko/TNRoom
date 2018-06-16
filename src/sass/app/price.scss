@@ -1,0 +1,58 @@
+.thnr__pricelist {
+  text-align: center;
+  padding: 80px 10px;
+  &-wrap {
+    text-align: left;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.thnr {
+  &__price-wrap {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    text-align: left;
+    margin: 0 2% 15px;
+    ul {
+      margin: 0;
+      padding: 0;
+      &:after {
+        clear: both;
+      }
+      li {
+        text-transform: capitalize;
+        list-style: none;
+        line-height: 1.8;
+        font-weight: 300;
+        span,
+        price-elem-wrap {
+          width: 70%;
+          float: left;
+          span {
+            width: 100%;
+            &:last-child {
+              width: 100%;
+              font-weight: 300;
+              font-size: 12px;
+            }
+          }
+          &:last-child {
+            width: 26%;
+            float: right;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  &__price-title {
+    color: $color-basic-red;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+}

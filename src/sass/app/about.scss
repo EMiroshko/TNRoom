@@ -50,7 +50,7 @@
         padding-top: 10px;
         transition: .5s;
         text-align: left;
-        max-width: 90%;
+        max-width: 100%;
         margin: 0 auto;
     }
     &__img {
@@ -61,6 +61,15 @@
         -webkit-filter: grayscale(100%); 
         filter: grayscale(100%);
         transition: .5s;
+        position: relative;
+        overflow: hidden;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+        }
     }
     
 }
