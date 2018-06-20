@@ -1,5 +1,16 @@
 .thnr__about {
-    padding: 8% 30px 0;
+    padding: 8% 30px 60px;
+    &-text {
+        text-align: left;
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .about-text-title {
+        color: $color-basic-red;
+        font-size: 18px;
+        font-weight: bold;
+    }
     &__wrap {
         width: 100%;
         margin: 0 auto;

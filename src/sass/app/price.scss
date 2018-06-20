@@ -2,7 +2,7 @@
   text-align: center;
   padding: 80px 10px;
   &-wrap {
-    text-align: left;
+    text-align: center;
     width: 95%;
     margin: 0 auto;
   }
@@ -12,11 +12,11 @@
   &__price-wrap {
     display: inline-block;
     vertical-align: top;
-    width: 45%;
+    width: 70%;
     box-sizing: border-box;
     padding: 0 10px;
     text-align: left;
-    margin: 0 2% 15px;
+    margin: 0 auto 15px;
     ul {
       margin: 0;
       padding: 0;
@@ -41,7 +41,7 @@
             }
           }
           &:last-child {
-            width: 26%;
+            width: 100px;
             float: right;
             font-weight: 500;
           }
