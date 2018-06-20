@@ -508,7 +508,16 @@ a {
       right: -33px; } }
 
 .thnr__about {
-  padding: 8% 30px 0; }
+  padding: 8% 30px 60px; }
+  .thnr__about-text {
+    text-align: left;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 20px; }
+  .thnr__about .about-text-title {
+    color: #d40000;
+    font-size: 18px;
+    font-weight: bold; }
   .thnr__about__wrap {
     width: 100%;
     margin: 0 auto;
@@ -887,18 +896,18 @@ a {
   text-align: center;
   padding: 80px 10px; }
   .thnr__pricelist-wrap {
-    text-align: left;
+    text-align: center;
     width: 95%;
     margin: 0 auto; }
 
 .thnr__price-wrap {
   display: inline-block;
   vertical-align: top;
-  width: 45%;
+  width: 70%;
   box-sizing: border-box;
   padding: 0 10px;
   text-align: left;
-  margin: 0 2% 15px; }
+  margin: 0 auto 15px; }
   .thnr__price-wrap ul {
     margin: 0;
     padding: 0; }
@@ -923,7 +932,7 @@ a {
             font-size: 12px; }
         .thnr__price-wrap ul li span:last-child,
         .thnr__price-wrap ul li price-elem-wrap:last-child {
-          width: 26%;
+          width: 100px;
           float: right;
           font-weight: 500; }
 
