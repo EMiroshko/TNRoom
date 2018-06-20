@@ -12,8 +12,8 @@
         }
         .active {
             .thnr__about__img {
-                width: 160px;
-                height: 160px;
+                //width: 160px;
+                //height: 160px;
                 border: 5px solid $color-pink;
                 -webkit-filter: none;
                 filter: none;
@@ -36,7 +36,7 @@
     }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1000px) {
     .thnr__about {
         &.thnr__page {
             padding-bottom: 50px;
@@ -50,8 +50,9 @@
             display: inline-block;
             box-sizing: border-box;
             margin: 0;
-            padding: 0 5px;
+            padding: 0 5px 20px;
             width: calc(100% / 3);
+            min-height: 0;
         }
         &__img {
             width: 120px;
@@ -60,16 +61,22 @@
             filter: none;
             margin: 0 auto;
             transition: .5s;
+            border: 5px solid $color-pink;
         }
 
         &__description {
             font-size: 14px;
             width: 100%;
             max-width: 100%;
+            > .thnr__master-description {
+                opacity: 1;
+            }
         }
         .active {
+            transform: scale(1);
             &.thnr__about__item {
                 width: calc((100% / 3));
+
             }
             .thnr__about__img {
                 width: 120px;
