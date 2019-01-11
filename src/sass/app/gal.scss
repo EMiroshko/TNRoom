@@ -52,19 +52,7 @@
     }
 
     .slick-arrow {
-      border: 10px solid transparent;
-      &.slick-prev {
-        left: -60px;
-        z-index: 100;
-        content: '<';
-        border-right: 10px solid $color-pink;
-      }
-      &.slick-next {
-        right: -60px;
-        z-index: 100;
-        content: '>';
-        border-left: 10px solid $color-pink;
-      }
+      display: none !important;
     }
 
   }

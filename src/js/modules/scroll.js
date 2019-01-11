@@ -15,7 +15,7 @@ class Scroll {
         this.cache.page = $('.thnr__page');      
     }
     initializeEvents() {
-        this.cache.header.on('click', () => {
+        this.cache.body.on('click', () => {
             this.slowScroll();
         })
             

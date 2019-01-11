@@ -43,6 +43,10 @@
     text-align: left;
     font-size: 12px;
     letter-spacing: 2px;
+    a {
+      display: block;
+      margin: 5px 0;
+    }
   }
   &__nav-button {
     &.button {

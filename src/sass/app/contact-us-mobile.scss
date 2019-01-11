@@ -20,10 +20,13 @@
                 float: left;
             }
         }
+        &__container-small {
+            padding-bottom: 0;
+        }
         &__container-small__phones,
         &__container-small__schedule,
         &__container-small__address {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         &__address {
             font-size: 12px;
@@ -72,7 +75,7 @@
             &__address {
                 height: auto;
                 display: block;
-                margin-top: 20px;
+                margin-top: 10px;
                 .thnr__address {
                     display: block;
                 }
