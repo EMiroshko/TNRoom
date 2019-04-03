@@ -8,6 +8,10 @@
   }
 }
 
+.subUl {
+  padding-left: 15px;
+}
+
 .thnr {
   &__price-wrap {
     display: inline-block;
@@ -29,7 +33,7 @@
         line-height: 1.8;
         font-weight: 300;
         span,
-        price-elem-wrap {
+        .price-elem-wrap {
           width: 70%;
           float: left;
           span {
@@ -38,6 +42,8 @@
               width: 100%;
               font-weight: 300;
               font-size: 12px;
+              line-height: 1;
+              margin-bottom: 4px;
             }
           }
           &:last-child {
